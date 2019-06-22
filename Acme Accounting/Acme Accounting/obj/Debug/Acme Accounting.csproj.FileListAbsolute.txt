@@ -1,0 +1,7 @@
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\obj\Debug\Acme Accounting.csprojAssemblyReference.cache
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\obj\Debug\Acme Accounting.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\bin\Debug\Acme Accounting.exe.config
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\bin\Debug\Acme Accounting.exe
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\bin\Debug\Acme Accounting.pdb
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\obj\Debug\Acme Accounting.exe
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Acme Accounting\Acme Accounting\obj\Debug\Acme Accounting.pdb
