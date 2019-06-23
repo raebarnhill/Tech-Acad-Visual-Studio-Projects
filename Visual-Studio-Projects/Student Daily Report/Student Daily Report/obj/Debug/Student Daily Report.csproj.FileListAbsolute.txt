@@ -1,0 +1,7 @@
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\bin\Debug\Student Daily Report.exe.config
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\bin\Debug\Student Daily Report.exe
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\bin\Debug\Student Daily Report.pdb
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\obj\Debug\Student Daily Report.csprojAssemblyReference.cache
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\obj\Debug\Student Daily Report.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\obj\Debug\Student Daily Report.exe
+C:\Users\Student\Documents\GitHub\Visual-Studio-Projects\Student Daily Report\Student Daily Report\obj\Debug\Student Daily Report.pdb
