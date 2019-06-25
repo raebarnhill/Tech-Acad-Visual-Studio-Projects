@@ -14,7 +14,10 @@ namespace Car_Insurance_Program
             int age = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Have you ever had a DUI? Please enter true or false.");
             bool hadDUI = true;
-            string DUI = Convert.ToString(Console.ReadLine());
+            string DUI = Console.ReadLine();
+
+            
+            
 
             Console.WriteLine("How many speeding tickets do you have?");
             int numTickets = Convert.ToInt32(Console.ReadLine());
