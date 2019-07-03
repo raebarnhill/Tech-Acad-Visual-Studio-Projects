@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Loops_and_Lists
 {
@@ -19,17 +20,17 @@ namespace Loops_and_Lists
             //a separate line.
 
 
-            //Console.WriteLine("Please enter your favorite animal:");
-            //string favAnimal = Console.ReadLine();
-            //string[] animals = { "cat ", "butterfly ", "zebra ", favAnimal };
+            Console.WriteLine("Please enter your favorite animal:");
+            string favAnimal = Console.ReadLine();
+            string[] animals = { "cat ", "butterfly ", "zebra ", favAnimal };
 
 
-            //foreach (string animal in animals)
-            //{
-            //    Console.WriteLine(animal);
-            //}
+            foreach (string animal in animals)
+            {
+                Console.WriteLine(animal);
+            }
 
-            //Console.ReadLine();
+            Console.ReadLine();
 
 
 
@@ -138,29 +139,50 @@ namespace Loops_and_Lists
 
             //    }
 
-            //    else 
+            //    else if (!animals.Contains(animalChoice))
             //    {
-            //        Console.WriteLine("The animal you've chosen isn't in the array.");
-
+            //        Console.WriteLine("The animal you've chosen isn't in the list.");
+            //        Console.ReadLine();
             //    }
-            //    Console.ReadLine();
 
-            //}
+
+
+
+
+
 
 
             //11.Create a List of strings that has at least two identical strings in the List. Create a foreach loop that 
             //evaluates each item in the list, and displays a message showing the string and whether or not it has already 
             //appeared in the list.
 
-            List<string> names = new List<string>() { "Charlie", "Evan", "Abi", "Abi", "Daniel", "Daniel" };
+            //string[] names = { "Evan", "Abi", "Abi", "Daniel", "Daniel" };
 
-            foreach (string name in names.GroupBy(x => x))
-            {
-                Console.WriteLine(names + " repeats " + (name.Count() - 1) + " times");
-            }
-            Console.ReadLine();
+            //List<string> myList = new List<string>();
+            //List<string> duplicates = new List<string>();
 
 
+            //   foreach (string name in names)
+            //   {
+            //       if (!myList.Contains(name))
+            //       {
+            //           myList.Add(name);
+
+            //       }
+
+            //       else
+            //           duplicates.Add(name);
+
+
+            //       foreach (string duplicate in duplicates)
+            //           Console.WriteLine("These strings appeared more than once: " + duplicate);
+
+
+            //       Console.ReadLine();
+        }
+
+
+            
         }
     }
         }
