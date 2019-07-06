@@ -45,30 +45,9 @@ namespace Methods
 
 
 
-        public Shelter()
-        {
-            Cats = new List<Cat>();
-            List<string> Breeds = new List<string>() { "Tabby", "Siamese", "Ragdoll", "Calico" };
-            List<string> Colors = new List<string>()
-            { "Black", "Brown", "Orange", "White", "Grey"};
+      
+      
 
 
-
-            foreach (string breed in Breeds)
-            {
-                foreach (string color in Colors)
-                {
-                    Cat cat = new Cat();
-                    cat.Breed = breed;
-                    cat.Color = color;
-                    Cats.Add(cat);
-                }
-
-
-            }
-         }
-
-
-        public List<Cat> Cats { get; set; }
     }
 }
