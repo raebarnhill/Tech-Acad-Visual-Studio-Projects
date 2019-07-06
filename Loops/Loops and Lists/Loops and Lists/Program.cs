@@ -159,31 +159,26 @@ namespace Loops_and_Lists
             //string[] names = { "Evan", "Abi", "Abi", "Daniel", "Daniel" };
 
             //List<string> myList = new List<string>();
-            //List<string> duplicates = new List<string>();
-
 
             //   foreach (string name in names)
             //   {
             //       if (!myList.Contains(name))
             //       {
             //           myList.Add(name);
+            //          Console.WriteLine(name + "  has not appeared in the list");
 
             //       }
 
             //       else
-            //           duplicates.Add(name);
-
-
-            //       foreach (string duplicate in duplicates)
-            //           Console.WriteLine("These strings appeared more than once: " + duplicate);
-
+            //           Console.WriteLine(name + " has already appeared");
+            
 
             //       Console.ReadLine();
         }
 
 
-            
-        }
+
+    }
     }
         }
     
