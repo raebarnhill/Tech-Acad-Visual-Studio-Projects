@@ -24,7 +24,7 @@ using System.Threading.Tasks;
 
 namespace Resident_Evil
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
