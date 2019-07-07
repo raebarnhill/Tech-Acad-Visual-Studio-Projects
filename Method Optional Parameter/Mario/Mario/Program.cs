@@ -26,13 +26,13 @@ namespace Mario
         {
             Character character = new Character();
 
-            //Console.WriteLine("Please enter a number for how many apples Yoshi has eaten:");
-            //int apples = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Please enter a number for how many bananas Yoshi has eaten (0 is a valid number):");
-            //int bananas = Convert.ToInt32(Console.ReadLine());
-            //int answer = character.FruitEaten(apples, bananas);
-            //Console.WriteLine("Yoshi has eaten " + answer + " total fruits.");
-            //Console.ReadLine();
+            Console.WriteLine("Please enter a number for how many apples Yoshi has eaten:");
+            int apples = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter a number for how many bananas Yoshi has eaten (0 is a valid number):");
+            int bananas = Convert.ToInt32(Console.ReadLine());
+            int answer = character.FruitEaten(apples, bananas);
+            Console.WriteLine("Yoshi has eaten " + answer + " total fruits.");
+            Console.ReadLine();
 
 
 
@@ -47,10 +47,10 @@ namespace Mario
 
 
 
-            int apples = 12;
-            int totalFruit = character.FruitEaten(12);
+            //int apples = 12;
+            //int totalFruit = character.FruitEaten(12);
 
-            Console.WriteLine("Yoshi has eaten " + totalFruit + " total fruits.");
+            //Console.WriteLine("Yoshi has eaten " + totalFruit + " total fruits.");
 
 
         }
