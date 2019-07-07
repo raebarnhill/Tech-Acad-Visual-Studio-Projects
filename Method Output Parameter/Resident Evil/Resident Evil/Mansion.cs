@@ -4,21 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//1.Create a class. In that class, create a void method that outputs an integer.
-//Have the method divide the data passed to it by 2.
+
 
 namespace Resident_Evil
 {
     class Mansion
     {
-        public void Zombies (out int zombiesKilled)
+        public void Zombies(out int zombiesKilled)
         {
-            int input = zombiesKilled;
+            zombiesKilled = Convert.ToInt32(Console.ReadLine());
             int zombEach = 2;
-            int result = zombiesKilled / zombEach;
-            return;
+            zombiesKilled = zombiesKilled / zombEach;
+            
 
         }
+
+        public static int Zombies(int mansionZombs, int totalZombs)
+        {
+            int input = mansionZombs;
+            return totalZombs - mansionZombs;
+        }
+
 
         
     }

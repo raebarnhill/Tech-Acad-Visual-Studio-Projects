@@ -31,10 +31,20 @@ namespace Resident_Evil
             Mansion mansion = new Mansion();
 
             Console.WriteLine("Please enter a number for how many Zombies have been eliminated:");
-            int zombiesKilled = Convert.ToInt32(Console.ReadLine());
-            int answer = mansion.Zombies(zombiesKilled);
-            Console.WriteLine(answer);
+            int zombiesKilled; 
+            mansion.Zombies(out zombiesKilled);
+            Console.WriteLine("You and your partner have each eliminated approximately " + zombiesKilled + " zombies each. Good Job!");
             Console.ReadLine();
+
+
+            Console.WriteLine("Please enter the number of zombies eliminated in the Mansion:");
+            int mansionZombs = Convert.ToInt32(Console.ReadLine());
+            int answer = Mansion.Zombies(mansionZombs, 798);
+            Console.WriteLine("You still have " + answer + " zombies to defeat.");
+            Console.ReadLine();
+
+           
+
 
         }
     }
