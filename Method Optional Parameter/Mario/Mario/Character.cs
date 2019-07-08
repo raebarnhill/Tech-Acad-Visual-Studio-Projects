@@ -10,9 +10,9 @@ namespace Mario
     {
         public int FruitEaten(int apples, int bananas = 0)
             {
-            int input = apples;
             int totalFruit = apples + bananas;
             return totalFruit;
+   
             }
 
 

@@ -25,13 +25,28 @@ namespace Mario
         static void Main(string[] args)
         {
             Character character = new Character();
-
+            
             Console.WriteLine("Please enter a number for how many apples Yoshi has eaten:");
             int apples = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter a number for how many bananas Yoshi has eaten (0 is a valid number):");
-            int bananas = Convert.ToInt32(Console.ReadLine());
-            int answer = character.FruitEaten(apples, bananas);
-            Console.WriteLine("Yoshi has eaten " + answer + " total fruits.");
+            Console.WriteLine("(Optional) Please enter a number for how many bananas Yoshi has eaten:");
+            string bananas1 = Console.ReadLine();
+            
+
+            if (bananas1 != "")
+            {
+                int bananas = Convert.ToInt32(bananas1);
+                int answer1 =character.FruitEaten(apples, bananas);
+                Console.WriteLine("Yoshi has eaten " + answer1 + " total fruits.");
+            }
+
+            else
+            {
+                int answer2 = character.FruitEaten(apples);
+                Console.WriteLine("Yoshi has eaten " + answer2 + " total fruits.");
+            }
+
+             
+            //Console.WriteLine("Yoshi has eaten " + answer + " total fruits.");
             Console.ReadLine();
 
 
