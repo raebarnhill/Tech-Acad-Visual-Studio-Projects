@@ -46,7 +46,6 @@ namespace Mario
             }
 
              
-            //Console.WriteLine("Yoshi has eaten " + answer + " total fruits.");
             Console.ReadLine();
 
 
