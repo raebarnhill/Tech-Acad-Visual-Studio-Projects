@@ -23,6 +23,17 @@ namespace Abstract_Method
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee();
+
+            employee.FirstName = "Sample";
+            employee.LastName = "Student";
+            
+
+            string FullName = employee.SayName();
+            Console.WriteLine(FullName);
+            Console.ReadLine();
+
+
         }
     }
 }

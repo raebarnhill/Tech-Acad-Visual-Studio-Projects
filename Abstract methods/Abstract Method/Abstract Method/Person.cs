@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Abstract_Method
 {
-    class Person
+   public abstract class Person
     {
+        public abstract string SayName();
+       
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
     }
 }

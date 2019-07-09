@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Abstract_Method
 {
-    class Employee : Person
+   public class Employee : Person
     {
+       public override string SayName()
+        {
+            string FullName = FirstName + LastName;
+            return FullName;
+        }
     }
 }
