@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inheritance
+namespace Abstract_Method
 {
     class Employee : Person
     {
-      
-
-        public int Id { get; set; }
     }
-
-  
 }

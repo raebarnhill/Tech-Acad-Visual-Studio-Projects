@@ -26,10 +26,11 @@ namespace Inheritance
         {
             Employee employee = new Employee();
 
-            string FirstName = "Sample";
-            string LastName = "Student";
+             employee.FirstName = "Sample";
+             employee.LastName = "Student";
            
-            employee.SayName(FirstName, LastName);
+            employee.SayName();
+           
             Console.ReadLine();
 
 
