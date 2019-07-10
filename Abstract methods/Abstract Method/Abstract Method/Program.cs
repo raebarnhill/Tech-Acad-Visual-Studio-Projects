@@ -23,15 +23,25 @@ namespace Abstract_Method
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
+            IQuittable newGuy = new Employee();
 
-            employee.FirstName = "Sample";
-            employee.LastName = "Student";
+            string newEmployee = "Bob";
+            string EmployeeName = newGuy.Quit(newEmployee);
+            Console.WriteLine(newEmployee + ", NewGuy");
+            Console.ReadLine();
+            
+            
+            
+            
+            //Employee employee = new Employee();
+
+            //employee.FirstName = "Sample";
+            //employee.LastName = "Student";
             
 
-            string FullName = employee.SayName();
-            Console.WriteLine(FullName);
-            Console.ReadLine();
+            //string FullName = employee.SayName();
+            //Console.WriteLine(FullName);
+            //Console.ReadLine();
 
 
         }
