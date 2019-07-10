@@ -23,21 +23,22 @@ namespace Abstract_Method
     {
         static void Main(string[] args)
         {
+            
             IQuittable newGuy = new Employee();
 
-            string newEmployee = "Bob";
-            string EmployeeName = newGuy.Quit(newEmployee);
-            Console.WriteLine(newEmployee + ", NewGuy");
+            newGuy.NewFName = "Bob";
+            newGuy.NewLName = "NewGuy";
+
+            newGuy.Quit();
+
             Console.ReadLine();
-            
-            
-            
-            
+
+
             //Employee employee = new Employee();
 
             //employee.FirstName = "Sample";
             //employee.LastName = "Student";
-            
+
 
             //string FullName = employee.SayName();
             //Console.WriteLine(FullName);

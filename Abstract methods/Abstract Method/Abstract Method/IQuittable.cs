@@ -18,7 +18,12 @@ namespace Abstract_Method
 {
      interface IQuittable
     {
-        string Quit(string newEmployee);
+         void Quit();
+
+        
+        string NewFName { get; set; }
+        string NewLName { get; set; }
 
     }
+
 }

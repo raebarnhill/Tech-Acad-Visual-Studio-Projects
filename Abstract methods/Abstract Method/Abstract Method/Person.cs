@@ -13,6 +13,6 @@ namespace Abstract_Method
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
+        public int EmployeeId { get; set; }
     }
 }
