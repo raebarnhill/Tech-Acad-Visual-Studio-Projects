@@ -17,22 +17,40 @@ using System.Threading.Tasks;
 //firstName "Sample" and lastName "Student". Call the SayName() method on the 
 //object.
 
+//Overload the "==" operator so it checks if two Employee objects are 
+//equal by comparing their Id property.
+
 namespace Abstract_Method
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
-            IQuittable newGuy = new Employee();
+            Employee employee = new Employee();
 
-            newGuy.NewFName = "Bob";
-            newGuy.NewLName = "NewGuy";
+            Employee employeeID1 = new Employee { EmployeeId = 1234 };
+            Employee employeeID2 = employeeID1;
+            Employee employeeID3 = new Employee { EmployeeId = 2345 };
 
-            newGuy.Quit();
+            Console.WriteLine(employeeID1 == employeeID3);
 
-            Console.ReadLine();
 
+
+
+
+
+
+
+            //IQuittable newGuy = new Employee();
+
+            //newGuy.NewFName = "Bob";
+            //newGuy.NewLName = "NewGuy";
+
+            //newGuy.Quit();
+
+            //Console.ReadLine();
+
+           
 
             //Employee employee = new Employee();
 
