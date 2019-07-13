@@ -7,34 +7,61 @@ using System.Threading.Tasks;
 //Overload the "==" operator so it checks if two Employee 
 //objects are equal by comparing their Id property.
 
+//1.Make the Employee class take a generic type parameter.
+
+//2.Add a property to the Employee class called "things" and have its 
+//data type be a generic list matching the generic type of the class.
+
+//3.Instantiate an Employee object with type "string" as its generic 
+//parameter.Assign a list of strings as the property value of Things.
+
+//4.Instantiate an Employee object with type "int" as its generic 
+//parameter.Assign a list of integers as the property value of Things.
+
+//5.Create a loop that prints all of the Things to the Console.
+
 namespace Abstract_Method
 {
-   public class Employee : Person, IQuittable 
+   
+
+   public class Employee<T> : Person//, IQuittable 
     {
-        public override bool Equals(object obj)
-        {
-            if (!(obj is Employee))
-                return false;
-
-            var other = obj as Employee;
-
-            if (EmployeeId != other.EmployeeId)
-                return false;
-
-            return true;
-        }
+        
+            public List<T> Things { get; set; }
+            public string NewFName { get; set; }
+            public string NewLName { get; set; }
 
 
 
-        public static bool operator ==(Employee employeeID1, Employee employeeID2)
-        {
-            return employeeID1.Equals(employeeID2);
-        }
 
-        public static bool operator !=(Employee employeeID1, Employee employeeID2)
-        {
-            return !(employeeID1 == employeeID2);
-        }
+
+
+
+
+        // public override bool Equals(object obj)
+        // {
+        //     if (!(obj is Employee))
+        //         return false;
+
+        //     var other = obj as Employee;
+
+        //     if (EmployeeId != other.EmployeeId)
+        //         return false;
+
+        //     return true;
+        // }
+
+
+
+        // public static bool operator ==(Employee employeeID1, Employee employeeID2)
+        // {
+        //     return employeeID1.Equals(employeeID2);
+        // }
+
+        // public static bool operator !=(Employee employeeID1, Employee employeeID2)
+        // {
+        //     return !(employeeID1 == employeeID2);
+        // }
 
 
 
@@ -46,16 +73,15 @@ namespace Abstract_Method
             return FullName;
         }
 
+
+        //public void Quit()
+        // {
+        //     string newEmployeeName = NewFName + NewLName;
+        //     Console.WriteLine(newEmployeeName);
+
+        // }
+
        
-       public void Quit()
-        {
-            string newEmployeeName = NewFName + NewLName;
-            Console.WriteLine(newEmployeeName);
-
-        }
-
-        public string NewFName { get; set; }
-        public string NewLName { get; set; }
 
     }
 }
