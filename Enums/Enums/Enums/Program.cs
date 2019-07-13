@@ -21,33 +21,25 @@ namespace Enums
     {
         static void Main(string[] args)
         {
+           
             Console.WriteLine("Please enter the current day of the week:");
-            Console.ReadLine();
+            string value = Console.ReadLine();
 
-            DaysOfTheWeek monday = DaysOfTheWeek.Monday;
-            DaysOfTheWeek tuesday = DaysOfTheWeek.Tuesday;
-            DaysOfTheWeek wednesday = DaysOfTheWeek.Wednesday;
-            DaysOfTheWeek thursday = DaysOfTheWeek.Thursday;
-            DaysOfTheWeek friday = DaysOfTheWeek.Friday;
-            DaysOfTheWeek saturday = DaysOfTheWeek.Saturday;
-            DaysOfTheWeek sunday = DaysOfTheWeek.Sunday;
-            
+            DaysOfTheWeek daysOfTheWeek;
+            try
+            {
+                daysOfTheWeek = (DaysOfTheWeek)Enum.Parse(typeof(DaysOfTheWeek), value);
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Please enter an actual day of the week:");
+            }
 
 
         }
 
-        public enum DaysOfTheWeek
-        {
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
-        }
-
-
+        
 
 
     }
