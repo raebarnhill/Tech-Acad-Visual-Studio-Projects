@@ -46,18 +46,35 @@ namespace Lambda_Expressions
             //}
 
 
-            List<string> employees = new List<string>() { "Joe Schmoe, 1", "Joe Moe, 2", "Rick Grimes, 3", "Maggie Greene, 4", "Beth Greene, 5", "Hershel Greene, 6", "Daryl Dixon, 7", "Merl Dixon, 8", "Carol Peletier, 9", "Glen Rhee, 10" };
 
-            List<string> joeEmployees = new List<string> { };
 
-            joeEmployees = employees.Find(x => x.Contains(x > 5)).ToList();
+
+
+            Employee employee = new Employee();
+
+            List<Employee> joeEmployees = new List<Employee>();
+            List<Employee> employees = new List<Employee>
+            {
+                new Employee { Id = 1, FName = "Joe", LName = "Schmoe" },
+                new Employee { Id = 2, FName = "Joe", LName = "Moe" },
+                new Employee { Id = 3, FName = "Rick", LName = "Grimes" },
+                new Employee { Id = 4, FName = "Maggie", LName = "Greene" },
+                new Employee { Id = 5, FName = "Beth", LName = "Greene" },
+                new Employee { Id = 6, FName = "Hershel", LName = "Greene" },
+                new Employee { Id = 7, FName = "Daryl", LName = "Dixon" },
+                new Employee { Id = 8, FName = "Merl", LName = "Dixon" },
+                new Employee { Id = 9, FName = "Carol", LName = "Peletier" },
+                new Employee { Id = 10, FName = "Glen", LName = "Rhee" }
+            };
+
+            joeEmployees = employees.Where(x => employee.Id > 5).ToList();
 
             Console.WriteLine(joeEmployees);
-
-
+            Console.ReadLine();
         }
+        
 
-       
-        }
+
+    }
     }
 
